@@ -5,7 +5,8 @@ function actulizarCacheDinamico(dynamicCache, req, res) {
 
     if( res.ok ){
         caches.open( dynamicCache ).then ( cache => {
-            cache.put(req,res.clone());
+            let responseClone = res.clone();
+            cache.put(req, responseClone);
 
             return res.clone();
         });
