@@ -1,5 +1,5 @@
 //imports
-importScripts('js/sw-utils.js');
+importScripts('twittor/js/sw-utils.js');
 
 
 const STATIC_CACHE = 'static-v2';
@@ -17,7 +17,8 @@ const APP_SHELL = [
     '/img/avatars/spiderman.jpg',
     '/img/avatars/thor.jpg',
     '/img/avatars/wolverine.jpg',
-    '/js/app.js'
+    '/js/app.js',
+    '/js/sw-utils.js'
 
 ];
 
